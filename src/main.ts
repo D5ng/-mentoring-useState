@@ -11,7 +11,8 @@ function Counter() {
 
   return {
     increase() {
-      setCount(count + 1)
+      // setCount(count + 1)
+      setCount((prevCount) => prevCount + 1)
     },
     render() {
       console.log("count", count)
